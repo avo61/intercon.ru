@@ -129,7 +129,7 @@ a {
     font-size: 32px;
     font-weight: 400;
     color: white;
-    background-color: rgba(80, 80, 80, 0.7);
+    /*   background-color: rgba(80, 80, 80, 0.7); */
     margin-top: 5px;
     margin-bottom: 5px;
     text-align: center;
@@ -160,12 +160,31 @@ a {
     /*opacity: 0.6;*/
 }
 
+.mdl-card__title--house1 {
+    color: #fff;
+    height: 340px;
+    background: url('../images/house1.jpg') center / cover;
+    padding: 0;
+    background-color: rgba(80, 80, 80, 0.7);
+    align-items: flex-end;
+    /*opacity: 0.6;*/
+}
+
 .mdl-card__title--kvartira {
     color: #fff;
     height: 170px;
     background: url('../images/kvartira.png') center / cover;
     background-color: rgba(80, 80, 80, 0.7);
     padding: 0;
+}
+
+.mdl-card__title--kvartira1 {
+    color: #fff;
+    height: 340px;
+    background: url('../images/kvartira1.jpg') center / cover;
+    background-color: rgba(80, 80, 80, 0.7);
+    padding: 0;
+    align-items: flex-end;
 }
 
 .mdl-card__title--office {

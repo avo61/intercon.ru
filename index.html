@@ -13,11 +13,14 @@
     <!-- Page styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,100,500,300italic,500italic,700italic,900,300">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=ru">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- <link rel="stylesheet" href="css/styles.css"> -->
     <link rel="stylesheet" href="css/intercon.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Affd233641b727f9b27d979341f0f38a7082d0a58f3601fb1cbe6fe75825afe9d&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
     <script src="js/scroll.js"></script>
     <style>
         #view-source {
@@ -40,14 +43,17 @@
         <header class=" mdl-layout__header  mdl-layout__header--waterfall  mdl-layout__header--isp ">
             <div class="mdl-layout__header-row">
                 <span class="mdl-layout-title mdl-layout-title--nomobile-isp ">
+                        <a href="index.html">
+                                
                     <img class="isp-logo-image" src="images/logo.png">
+                        </a>
 		        </span>
                 <!-- Add spacer, to align navigation to the right in desktop -->
                 <div class=" mdl-layout-spacer"></div>
 
                 <!-- Navigation -->
                 <nav class="mdl-navigation  mdl-navigation--isp-row">
-                    <a class="mdl-navigation__link  mdl-typography--text-uppercase" href="http://intercon.ru/private/12/tariff/">Дом</a>
+                    <a class="mdl-navigation__link  mdl-typography--text-uppercase" href="house.html">Дом</a>
                     <a class="mdl-navigation__link  mdl-typography--text-uppercase" href="http://intercon.ru/private/12/tariff/">Квартира</a>
                     <a class="mdl-navigation__link  mdl-typography--text-uppercase" href="http://intercon.ru/corporate/16/tariff/">Офис</a>
                     <a class="mdl-navigation__link  mdl-typography--text-uppercase" href="http://intercon.ru/support/faq/">Сервис</a>
@@ -81,6 +87,7 @@
             </div>
             <!-- Bottom row, not visible on scroll -->
             <div class="mdl-layout__header-row mdl-layout__header-row2 ">
+                <!-- <div class="mdl-layout__drawer"> -->
                 <div class="mdl-layout-spacer"></div>
 
                 <nav class="mdl-navigation mdl-navigation--isp-row2">
@@ -152,12 +159,25 @@
             </div>-->
         </header>
 
-        <div class="mdl-layout__drawer mdl-layout__header--isp">
+        <!-- <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Title</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>
+            </nav>
+        </div> -->
+
+
+
+
+        <!-- <div class="mdl-layout__drawer mdl-layout__header--isp">
             <span class="isp-button-clear">
-          <button class="mdl-button  mdl-js-button  mdl-button--icon mdl-js-ripple-effect">
+            <button class="mdl-button  mdl-js-button  mdl-button--icon mdl-js-ripple-effect">
             <i class="material-icons">clear</i>
-          </button>		
-        </span>
+             </button>		
+            </span>
             <nav class="mdl-navigation">
                 <a class="mdl-navigation__link  mdl-navigation__link--isp-drawer" href="">Личный Кабинет</a>
                 <a class="mdl-navigation__link  mdl-navigation__link--isp-drawer" href="">Интернет Дом</a>
@@ -170,778 +190,466 @@
                 <a class="mdl-navigation__link  mdl-navigation__link--isp-drawer" href="">Форум</a>
                 <a class="mdl-navigation__link  mdl-navigation__link--isp-drawer" href="">Обращение&nbsp;к&nbsp;Руководству</a>
             </nav>
-        </div>
+        </div> -->
 
         <div class="mdl-layout__content">
+
+            <!--<div class="isp-fon-container">
+                <div class="isp-new-section">
+                    <div class="int-section-title  logo-font ">
+                        <h1>Интернет провайдер в Воронеже</h1>
+                    </div>
+                    <div class="banners-grup">
+                        <dir class="banners">
+                            <a class="banners-ref" href="">
+                                <dir class="banner">
+                                    <img class="banner-img" src='images/housebanner.jpg' alt="">
+                                    <dir class="banner-header">Интернет для частных Домов</dir>
+                                </dir>
+                                <div class=" banner-text">
+                                    <h4>Интернет для квартир 300 Мбит/c</h4>
+                                    <p>Социальный тариф</p>
+                                    <p>Интерактивное ТВ</p>
+                                    <h4>От 250 руб</h4>
+                                </div>
+                            </a>
+                        </dir>
+                        <dir class="banners">
+                            <a class="banners-ref" href="">
+                                <dir class="banner">
+                                    <img class="banner-img" src='images/kvartirabanner.jpg' alt="">
+                                    <dir class="banner-header">Интернет для Многоквартирных Домов</dir>
+                                </dir>
+                                <div class="banner-text">
+                                    <h4>Интернет для квартир 300 Мбит/c</h4>
+                                    <p>Социальный тариф</p>
+                                    <div class="banner-align"></div>
+                                    <h4>От 250 руб</h4>
+                                </div>
+                            </a>
+                        </dir>
+                    </div>
+                    <div class="banners-grup">
+                        <dir class="banners">
+                            <a class="banners-ref" href="">
+                                <dir class="banner">
+                                    <img class="banner-img" src='images/officebanner.jpg' alt="">
+                                    <dir class="banner-header">Интернет для частных Домов</dir>
+                                </dir>
+                                <div class=" banner-text">
+                                    <h4>Интернет для квартир 300 Мбит/c</h4>
+                                    <p>Социальный тариф</p>
+                                    <p>Интерактивное ТВ</p>
+                                    <div class="banner-align"></div>
+                                    <h4>От 250 руб</h4>
+                                </div>
+                            </a>
+                        </dir>
+                        <dir class="banners">
+                            <a class="banners-ref" href="">
+                                <dir class="banner">
+                                    <img class="banner-img" src='images/servicebanner.jpg' alt="">
+                                    <dir class="banner-header">Интернет для Многоквартирных Домов</dir>
+                                </dir>
+                                <div class="banner-text">
+                                    <h4>Интернет для квартир 300 Мбит/c</h4>
+                                    <p>Социальный тариф</p>
+                                    <div class="banner-align"></div>
+                                    <h4>От 250 руб</h4>
+                                </div>
+                            </a>
+                        </dir>
+                    </div>
+                </div>
+            </div>-->
+
             <div class="isp-fon-container">
                 <div class="isp-new-section">
                     <div class="int-section-title  logo-font ">
                         <h1>Интернет провайдер в Воронеже</h1>
                     </div>
-
-                    <!-- --------------------------------1----------------------------- -->
-                    <div class=" mdl-grid">
-
-                        <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--8-col-phone mdl-card mdl-card--isp-service-card_ mdl-card--border ">
-
-                            <!--<div class="demo-card-wide mdl-card mdl-shadow--2dp">-->
-                            <a href="">
-
-
-                                <div class="mdl-card__media">
-                                    <img class="img-opacity" src='images/kvartira2.jpg' width="574" height="170" border="0" alt="">
-
-                                </div>
-                                <!--</a>-->
-                                <div class="mdl-card__supporting-text">
-                                    <h5>Интернет 100 Мбит/c</h5>
-                                    <h5>Оптика до Дома</h5>
-                                    <h5>IP TV более 200 каналов</h5>
-                                    <h3>От 490 руб</h3>
-                                </div>
-                                <div class="mdl-card__supporting-text--mask mdl-card__supporting-text--mask--align">
-                                    <h2 class="mdl-card__supporting-text--mask--format">Интернет для Частных Домов</h2>
-                                </div>
-                            </a>
-                        </div>
-
-
-                        <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--8-col-phone mdl-card mdl-card--isp-service-card_ mdl-card--border ">
-
-                            <!--<div class="demo-card-wide mdl-card mdl-shadow--2dp">-->
-                            <a href="">
-
-
-
-                                <div class="mdl-card__media">
-                                    <img class="img-opacity" src='images/kvartira2.jpg' width="574" height="170" border="0" alt="">
-                                </div>
-                                <div class="mdl-card__media--mask mdl-card__media--mask--align">
-                                    <h2 class="mdl-card__media--mask--format">Интернет для Многоквартирных Домов</h2>
-                                </div>
-                                <!--</a>-->
-                                <div class=" mdl-card__supporting-text">
-                                    <h4>Интернет для квартир 300 Мбит/c</h4>
-                                    <h5>Социальный тариф</h5>
-                                    <h5>Интерактивное ТВ</h5>
-                                    <h3>От 250 руб</h3>
-                                </div>
-                            </a>
-
-                        </div>
-
-                    </div>
-                    <!-- --------------------------------2----------------------------- -->
-                    <!-- --------------------------------2----------------------------- -->
-                    <div class=" mdl-grid">
-
-                        <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--8-col-phone mdl-card mdl-card--isp-service-card_ mdl-card--border ">
-
-                            <!--<div class="demo-card-wide mdl-card mdl-shadow--2dp">-->
-                            <a href="">
-
-
-
-                                <div class="mdl-card__media">
-                                    <img class="img-opacity" src='images/kvartira2.jpg' width="574" height="230" border="0" alt="">
-                                </div>
-                                <div class="mdl-card__supporting-text" style="min-height:50px">
-                                    <h3> Интернет для Частных Домов</h3>
-                                </div>
-                                <div class="mdl-card__media--mask4 mdl-card__media--mask--align4">
-                                    <h3 class="mdl-card__media--mask--format4">Интернет для Многоквартирных Домов </h3>
-                                </div>
-                                <!--</a>-->
-                                <div class=" mdl-card__supporting-text mdl-card__supporting-text--absolut4">
-                                    <h4>Интернет для квартир 300 Мбит/c</h4>
-                                    <h5>Социальный тариф</h5>
-                                    <h5>Интерактивное ТВ</h5>
-                                    <h3>От 250 руб</h3>
-                                </div>
-                            </a>
-
-                        </div>
-
-
-                        <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--8-col-phone mdl-card mdl-card--isp-service-card_ mdl-card--border ">
-
-                            <!--<div class="demo-card-wide mdl-card mdl-shadow--2dp">-->
-                            <a href="">
-
-
-
-                                <div class="mdl-card__media">
-                                    <img class="img-opacity" src='images/kvartira2.jpg' width="574" height="230" border="0" alt="">
-                                </div>
-                                <div class="mdl-card__supporting-text">
-                                    <h3> Интернет для Многоквартирных Домов</h3>
-                                </div>
-                                <div class="mdl-card__media--mask3 mdl-card__media--mask--align3">
-                                    <h3 class="mdl-card__media--mask--format3">Интернет для Многоквартирных Домов </h3>
-                                </div>
-                                <!--</a>-->
-                                <div class=" mdl-card__supporting-text mdl-card__supporting-text--absolut3">
-                                    <h4>Интернет для квартир 300 Мбит/c</h4>
-                                    <h5>Социальный тариф</h5>
-                                    <h5>Интерактивное ТВ</h5>
-                                    <h3>От 250 руб</h3>
-                                </div>
-                            </a>
-
-                        </div>
-
-                    </div>
-                    <!-- --------------------------------2----------------------------- -->
-                    <div class=" mdl-grid">
-
-                        <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--8-col-phone mdl-card mdl-card--isp-service-card_ mdl-card--border ">
-
-                            <!--<div class="demo-card-wide mdl-card mdl-shadow--2dp">-->
-                            <!--<a href="">-->
-
-                            <div class="mdl-card__title mdl-card--border mdl-card__title--house2_">
-                                <!--<div class="mdl-card_title--isp-mask_">-->
-                                <h2 class="mdl-card__title-text">Интернет для Частных Домов</h2>
-                                <!--</div>-->
-                            </div>
-                            <div class="mdl-card__media">
-                                <img src='images/kvartira2.jpg' width="574" height="170" border="0" alt="">
-                            </div>
-                            <!--</a>-->
-                            <div class="mdl-card__supporting-text">
-                                <h5>Интернет 100 Мбит/c</h5>
-                                <h5>Оптика до Дома</h5>
-                                <h5>IP TV более 200 каналов</h5>
-                                <h3>От 490 руб</h3>
-                            </div>
-                            <div class="mdl-card__actions mdl-card--border">
-                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Узнать больше</a>
-                            </div>
-                            <div class="mdl-card__menu">
-                                <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                                     <i class="material-icons">share</i>
-                                 </button>
-                            </div>
-                        </div>
-
-
-                        <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--8-col-phone mdl-card mdl-card--isp-service-card_ mdl-card--border ">
-
-                            <!--<div class="demo-card-wide mdl-card mdl-shadow--2dp">-->
-                            <!--<a href="">-->
-
-
-                            <div class="mdl-card__title mdl-card--border mdl-card__title--house2_">
-                                <div class="mdl-card_title--isp-mask_">
-                                    <h2 class="mdl-card__title-text">Интернет для Многоквартирных Домов</h2>
-                                </div>
-                            </div>
-                            <div class="mdl-card__media">
-                                <img src='images/kvartira2.jpg' width="574" height="170" border="0" alt="">
-                            </div>
-                            <!--</a>-->
-                            <div class="mdl-card__supporting-text">
-                                <h5>Интернет для квартир 300 Мбит/c</h5>
-                                <h5>Социальный тариф</h5>
-                                <h5>Интерактивное ТВ</h5>
-                                <h3>От 250 руб</h3>
-                            </div>
-                            <div class="mdl-card__actions mdl-card--border">
-                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Узнать больше</a>
-                            </div>
-                            <div class="mdl-card__menu">
-                                <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                                     <i class="material-icons">share</i>
-                                 </button>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-
-                    <div class=" mdl-grid">
-
-                        <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--8-col-phone mdl-card mdl-card--isp-service-card_ mdl-card--border ">
-
-                            <!--<div class="demo-card-wide mdl-card mdl-shadow--2dp">-->
-                            <a href="">
-                                <div>
-                                    <div class="mdl-card__media">
-                                        <img src='images/kvartira2.jpg' width="574" height="170" border="0" alt="">
-                                    </div>
-                                    <!--</a>-->
-                                    <div class="mdl-card__supporting-text">
-                                        <h4>Интернет Частных домов 100 Мбит/c</h4>
-                                        <h5>Оптика до Дома</h5>
-                                        <h5>IP TV более 200 каналов</h5>
-                                        <h3>От 490 руб</h3>
-                                    </div>
-                                </div>
-                            </a>
-
-                        </div>
-
-
-                        <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--8-col-phone mdl-card mdl-card--isp-service-card_ mdl-card--border ">
-
-                            <!--<div class="demo-card-wide mdl-card mdl-shadow--2dp">-->
-                            <a href="">
-
-
-
-                                <div class="mdl-card__media">
-                                    <img class="img-opacity" src='images/kvartira2.jpg' width="574" height="170" border="0" alt="">
-                                </div>
-                                <div class="mdl-card__media--mask1 mdl-card__media--mask--align1">
-                                    <h2 class="mdl-card__media--mask--format1">Интернет для Многоквартирных Домов</h2>
-                                </div>
-                                <!--</a>-->
-                                <div class=" mdl-card__supporting-text">
-                                    <h4>Интернет для квартир 300 Мбит/c</h4>
-                                    <h5>Социальный тариф</h5>
-                                    <h5>Интерактивное ТВ</h5>
-                                    <h3>От 250 руб</h3>
-                                </div>
-                            </a>
-
-                        </div>
-
-                    </div>
-
-
                     <!-- ------------------------------------------------------------- -->
+                    <dir class="wrap-banners">
 
-                    <div class=" mdl-grid">
-                        <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--8-col-phone mdl-card mdl-card--isp-service-card mdl-card--border ">
+                        <div class="grid-banners">
+                            <dir class="grid-banners__item">
+                                <a class="banners-ref" href="">
+                                    <dir class="banners_">
 
-                            <!--<div class="demo-card-wide mdl-card mdl-shadow--2dp">-->
-                            <!--<a href="">-->
-                            <div class="mdl-card__title mdl-card__title--house2">
-
-                            </div>
-                            <!--</a>-->
-                            <div class="mdl-card__supporting-text">
-                                <h4>Интернет Частных домов 100 Мбит/c</h4>
-                                <h5>Оптика до Дома</h5>
-                                <h5>IP TV более 200 каналов</h5>
-                                <h3>От 490 руб</h3>
-                            </div>
-                            <div class="mdl-card__actions mdl-card--border">
-                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Узнать больше</a>
-                            </div>
-
-                        </div>
-                        <!--</div>-->
-                        <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--8-col-phone mdl-card mdl-card--isp-service-card mdl-shadow--1dp mdl-card--border">
-
-                            <!--<div class="demo-card-wide mdl-card mdl-shadow--2dp">-->
-                            <!--<a href="">-->
-                            <div class="mdl-card__title mdl-card__title--kvartira2">
-                                <!--<h2 class="mdl-card__title-text">Интернет для Квартиp</h2>-->
-                            </div>
-                            <!--</a>-->
-                            <div class="mdl-card__supporting-text">
-                                <h4>Интернет для квартир 300 Мбит/c</h4>
-                                <h5>Социальный тариф</h5>
-                                <h5>Интерактивное ТВ</h5>
-                                <h3>От 250 руб</h3>
-                            </div>
-                            <div class="mdl-card__actions mdl-card--border">
-                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Узнать больше</a>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- ------------------------------------------------------------- -->
-
-                    <div class=" mdl-grid">
-
-                        <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--8-col-phone mdl-card mdl-card--isp-service-card mdl-shadow--2dp ">
-
-                            <!--<div class="demo-card-wide mdl-card mdl-shadow--2dp">-->
-                            <!--<a href="">-->
-                            <div class="mdl-card__title mdl-card__title--house2">
-                                <div class="mdl-card_title--isp-mask">
-                                    <h2 class="mdl-card__title-text">Интернет для Частных Домов</h2>
-                                </div>
-                            </div>
-                            <!--</a>-->
-                            <div class="mdl-card__supporting-text">
-                                <h4>Интернет 100 Мбит/c</h4>
-                                <h4>Оптика до Дома</h4>
-                                <h4>IP TV более 200 каналов</h4>
-                                <h3>От 490 руб</h3>
-                            </div>
-                            <div class="mdl-card__actions ">
-                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Узнать больше</a>
-                            </div>
-                            <div class="mdl-card__menu">
-                                <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                                     <i class="material-icons">share</i>
-                                 </button>
-                            </div>
-                        </div>
-                        <!--</div>-->
-                        <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--8-col-phone mdl-card mdl-card--isp-service-card mdl-shadow--1dp mdl-card--border">
-
-                            <!--<div class="demo-card-wide mdl-card mdl-shadow--2dp">-->
-                            <!--<a href="">-->
-                            <div class="mdl-card__title mdl-card__title--kvartira2">
-                                <!--<h2 class="mdl-card__title-text">Интернет для Квартиp</h2>-->
-                            </div>
-                            <!--</a>-->
-                            <div class="mdl-card__supporting-text">
-                                <h4>Интернет для квартир 300 Мбит/c</h4>
-                                <h4>Социальный тариф</h4>
-                                <h4>Интерактивное ТВ</h4>
-                                <h3>От 250 руб</h3>
-                            </div>
-                            <div class="mdl-card__actions mdl-card--border">
-                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Узнать больше</a>
-                            </div>
-                            <div class="mdl-card__menu">
-                                <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                                     <i class="material-icons">share</i>
-                                 </button>
-                            </div>
-                        </div>
-                        <!--</div>-->
-                        <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--8-col-phone mdl-card mdl-card--isp-service-card mdl-shadow--3dp ">
-
-                            <!--<div class="demo-card-wide mdl-card mdl-shadow--2dp">-->
-                            <!--<a href="">-->
-                            <div class="mdl-card__title mdl-card__title--house1">
-                                <div class="mdl-card_title--isp-mask">
-                                    <h2 class="mdl-card__title-text">Интернет для Частных Домов</h2>
-                                </div>
-                            </div>
-                            <!--</a>-->
-                            <div class="mdl-card__supporting-text">
-                                <h4>Интернет 100 Мбит/c</h4>
-                                <h4>Оптика до Дома</h4>
-                                <h4>IP TV более 200 каналов</h4>
-                                <h3>От 490 руб</h3>
-                            </div>
-                            <div class="mdl-card__actions mdl-card--border">
-                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Узнать больше</a>
-                            </div>
-                            <div class="mdl-card__menu">
-                                <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                                     <i class="material-icons">share</i>
-                                 </button>
-                            </div>
-                        </div>
-                        <!--</div>-->
-                        <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--8-col-phone mdl-card mdl-card--isp-service-card mdl-shadow--3dp ">
-
-                            <!--<div class="demo-card-wide mdl-card mdl-shadow--2dp">-->
-                            <!--<a href="">-->
-                            <div class="mdl-card__title mdl-card__title--kvartira1">
-                                <!--<h2 class="mdl-card__title-text">Интернет для Квартиp</h2>-->
-                            </div>
-                            <!--</a>-->
-                            <div class="mdl-card__supporting-text">
-                                <h4>Интернет для квартир 300 Мбит/c</h4>
-                                <h4>Социальный тариф</h4>
-                                <h4>Интерактивное ТВ</h4>
-                                <h3>От 250 руб</h3>
-                            </div>
-                            <div class="mdl-card__actions mdl-card--border">
-                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Узнать больше</a>
-                            </div>
-                            <div class="mdl-card__menu">
-                                <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                                     <i class="material-icons">share</i>
-                                 </button>
-                            </div>
-                        </div>
-                        <!--</div>-->
-
-                        <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-cell--8-col-phone mdl-card mdl-card--isp-service-card mdl-shadow--3dp ">
-
-                            <!--<div class="demo-card-wide mdl-card mdl-shadow--2dp">-->
-                            <!--<a href="">-->
-                            <div class="mdl-card__title mdl-card__title--office">
-                                <div class="mdl-card_title--isp-mask">
-                                    <h2 class="mdl-card__title-text">Интернет для Офисов</h2>
-                                </div>
-                            </div>
-                            <!--</a>-->
-                            <div class="mdl-card__supporting-text">
-                                <h4>Интернет 300 Мбит/c</h4>
-                                <h4>Установим бесплатный WiFi</h4>
-                                <h4>IP Tелефония</h4>
-                                <h3>От 1000 руб</h3>
-                            </div>
-                            <div class="mdl-card__actions mdl-card--border">
-                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Узнать больше</a>
-                            </div>
-                            <div class="mdl-card__menu">
-                                <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                                     <i class="material-icons">share</i>
-                                 </button>
-                            </div>
-                        </div>
-                        <!--</div>-->
-
-                        <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-card mdl-card--isp-service-card mdl-shadow--3dp ">
-
-                            <!--<div class="demo-card-wide mdl-card mdl-shadow--2dp">-->
-                            <!--<a href="">-->
-                            <div class="mdl-card__title mdl-card__title--office">
-                                <h2 class="mdl-card__title-text">Отличная техническая поддержка</h2>
-                            </div>
-                            <!--</a>-->
-                            <div class="mdl-card__supporting-text">
-                                <h4>Приедем в течении суток</h4>
-                                <h4>Установим WiFi. Сделаем разводку кабелей. Настроим компьютер</h4>
-
-                            </div>
-                            <div class="mdl-card__actions mdl-card--border">
-                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Ознакомиться с сервисным центром</a>
-                            </div>
-                            <div class="mdl-card__menu">
-                                <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                                     <i class="material-icons">share</i>
-                                 </button>
-                            </div>
-                        </div>
-                        <!--</div>-->
-                        <div class="android-card-container_ mdl-grid">
-                            <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-cell--8-col-phone mdl-card mdl-card--isp-service-card mdl-shadow--3dp ">
-
-                                <!--<div class="demo-card-wide mdl-card mdl-shadow--2dp">-->
-                                <!--<a href="">-->
-                                <div class="mdl-card__title mdl-card__title--house">
-                                    <h2 class="mdl-card__title-text">Интернет для Частных Домов</h2>
-                                </div>
-                                <!--</a>-->
-                                <div class="mdl-card__supporting-text">
-                                    <h4>Интернет 100 Мбит/c</h4>
-                                    <h4>Оптика до Дома</h4>
-                                    <h4>IP TV более 200 каналов</h4>
-                                    <h3>От 490 руб</h3>
-                                </div>
-                                <div class="mdl-card__actions mdl-card--border">
-                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Узнать больше</a>
-                                </div>
-                                <div class="mdl-card__menu">
-                                    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                                     <i class="material-icons">share</i>
-                                 </button>
-                                </div>
-                            </div>
-                            <!--</div>-->
-                            <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-cell--8-col-phone mdl-card mdl-card--isp-service-card mdl-shadow--3dp ">
-
-                                <!--<div class="demo-card-wide mdl-card mdl-shadow--2dp">-->
-                                <!--<a href="">-->
-                                <div class="mdl-card__title mdl-card__title--kvartira">
-                                    <h2 class="mdl-card__title-text">Интернет для Квартиp</h2>
-                                </div>
-                                <!--</a>-->
-                                <div class="mdl-card__supporting-text">
-                                    <h4>Интернет 300 Мбит/c</h4>
-                                    <h4>Социальный тариф</h4>
-                                    <h4>IP TV более 200 каналов</h4>
-                                    <h3>От 250 руб</h3>
-                                </div>
-                                <div class="mdl-card__actions mdl-card--border">
-                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Узнать больше</a>
-                                </div>
-                                <div class="mdl-card__menu">
-                                    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                                     <i class="material-icons">share</i>
-                                 </button>
-                                </div>
-                            </div>
-                            <!--</div>-->
-
-                            <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-cell--8-col-phone mdl-card mdl-card--isp-service-card mdl-shadow--3dp ">
-
-                                <!--<div class="demo-card-wide mdl-card mdl-shadow--2dp">-->
-                                <!--<a href="">-->
-                                <div class="mdl-card__title mdl-card__title--office">
-                                    <div class="mdl-card_title--isp-mask">
-                                        <h2 class="mdl-card__title-text">Интернет для Офисов</h2>
-                                    </div>
-                                </div>
-                                <!--</a>-->
-                                <div class="mdl-card__supporting-text">
-                                    <h4>Интернет 300 Мбит/c</h4>
-                                    <h4>Установим бесплатный WiFi</h4>
-                                    <h4>IP Tелефония</h4>
-                                    <h3>От 1000 руб</h3>
-                                </div>
-                                <div class="mdl-card__actions mdl-card--border">
-                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Узнать больше</a>
-                                </div>
-                                <div class="mdl-card__menu">
-                                    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                                     <i class="material-icons">share</i>
-                                 </button>
-                                </div>
-                            </div>
-                            <!--</div>-->
-
-                            <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-card mdl-card--isp-service-card mdl-shadow--3dp ">
-
-                                <!--<div class="demo-card-wide mdl-card mdl-shadow--2dp">-->
-                                <!--<a href="">-->
-                                <div class="mdl-card__title mdl-card__title--office">
-                                    <h2 class="mdl-card__title-text">Отличная техническая поддержка</h2>
-                                </div>
-                                <!--</a>-->
-                                <div class="mdl-card__supporting-text">
-                                    <h4>Приедем в течении суток</h4>
-                                    <h4>Установим WiFi. Сделаем разводку кабелей. Настроим компьютер</h4>
-
-                                </div>
-                                <div class="mdl-card__actions mdl-card--border">
-                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Ознакомиться с сервисным центром</a>
-                                </div>
-                                <div class="mdl-card__menu">
-                                    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                                     <i class="material-icons">share</i>
-                                 </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="isp-fon-container">
-                    <div class="isp-new-section">
-                        <div class=" mdl-grid mdl-grid--no-spacing ">
-                            <div class="mdl-cell mdl-cell--8-col mdl-cell--6-col-tablet mdl-cell--8-col-phone  ">
-
-                                <h3>ИНТЕРКОН – БОЛЕЕ 17 ЛЕТ НА СВЯЗИ</h3>
-                                Интеркон сегодня – это скоростной безлимитный доступ в Интернет, цифровая телефония, надежный хостинг, множество локальных ресурсов и самые выгодные условия использования всего этого для абонентов.
-                                <br>Читать далее>>
-                                <br><br>ПОДКЛЮЧИТЬСЯ
-
-                            </div>
-                            <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-cell--8-col-phone  ">
-                            </div>
-                            <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-cell--8-col-phone  ">
-                                Доступность сети
-                                <h3>99.95%</h3>
-                                ИНФОРМАЦИЯ ОБ ОТКЛЮЧЕНИЯХ
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="isp-fon-container">
-                    <div class="isp-new-section">
-                        <h3>Интернет в Воронеже и области</h3>
-                        <div class=" mdl-grid  ">
-                            <div class="mdl-cell mdl-cell--2-col mdl-cell--3-col-tablet mdl-cell--2-col-phone  ">
-                                <a href="#">
-                                    <div class="isp-min-map">
-                                        <div class="isp-map__fone">
-                                            Воронеж
+                                        <dir class="banners___pic">
+                                            <img class="banners___pic-img" src='images/housebanner.jpg' alt="">
+                                            <dir class="banners___pic-head">Интернет для частных Домов</dir>
+                                        </dir>
+                                        <div class=" banners___text">
+                                            <h5>Интернет для квартир 300 Мбит/c</h5>
+                                            <h6>Социальный тариф</h6>
+                                            <h6>Интерактивное ТВ</h6>
+                                            <div class="banners___text-align"> </div>
+                                            <h5>От 250 руб</h5>
+                                        </div>
+                                    </dir>
+                                </a>
+                            </dir>
+                            <dir class="grid-banners__item">
+                                <a class="banners-ref" href="">
+                                    <dir class="banners_">
+                                        <dir class="banners___pic">
+                                            <img class="banners___pic-img" src='images/kvartirabanner.jpg' alt="">
+                                            <dir class="banners___pic-head">Интернет для Многоквартирных Домов</dir>
+                                        </dir>
+                                        <div class="banners___text">
+                                            <h5>Интернет для квартир 300 Мбит/c</h5>
+                                            <h6>Социальный тариф</h6>
+                                            <div class="banners___text-align"> </div>
+                                            <h5>От 250 руб</h5>
+                                        </div>
+                                    </dir>
+                                </a>
+                            </dir>
+                            <dir class="grid-banners__item">
+                                <a class="banners-ref" href="">
+                                    <div class="banners_">
+                                        <div class="banners___pic">
+                                            <img class="banners___pic-img" src='images/officebanner.jpg' alt="">
+                                            <div class="banners___pic-head">Интернет для частных Домов</div>
+                                        </div>
+                                        <div class=" banners___text">
+                                            <h5>Интернет для квартир 300 Мбит/c</h5>
+                                            <p>Социальный тариф</p>
+                                            <p>Интерактивное ТВ</p>
+                                            <div class="banners___text-align"> </div>
+                                            <h5>От 250 руб</h5>
                                         </div>
                                     </div>
                                 </a>
+                            </dir>
+                            <dir class="grid-banners__item">
+                                <a class="banners-ref" href="">
+                                    <div class="banners_">
+                                        <div class="banners___pic">
+                                            <img class="banners___pic-img" src='images/servicebanner.jpg' alt="">
+                                            <div class="banners___pic-head">Интернет для Многоквартирных Домов</div>
+                                        </div>
+                                        <div class="banners___text">
+                                            <h5>Интернет для квартир 300 Мбит/c</h5>
+                                            <p>Социальный тариф</p>
+                                            <div class="banner-align"></div>
+                                            <div class="banners___text-align"> </div>
+                                            <h5>От 250 руб</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                        </div>
+                </div>
+            </div>
+
+
+            <div class="isp-fon-container">
+                <div class="isp-new-section">
+                    <div class="info-section ">
+                        <div class="info  ">
+
+                            <h2>ИНТЕРКОН – БОЛЕЕ 17 ЛЕТ НА СВЯЗИ</h3>
+                                <p>
+                                    Интеркон сегодня – это скоростной безлимитный доступ в Интернет, цифровая телефония, надежный хостинг, множество локальных ресурсов и самые выгодные условия использования всего этого для абонентов.
+                                    <br>Читать далее>>
+                                    <br><br>
+                                </p>
+                        </div>
+
+                        <div class="access ">
+                            <div class="access__head">
+                                <p>Доступность сети</p>
+                                <p>10.08.2017 15:30</p>
                             </div>
-                            <div class="mdl-cell mdl-cell--2-col mdl-cell--3-col-tablet mdl-cell--2-col-phone  ">
+                            <div class="access__value">
+                                <p>
+                                    <!--99.95%-->
+                                    <h3>99.95%</h3>
+                                </p>
+                            </div>
+                            <div class="access__button">
+                                <p>ИНФОРМАЦИЯ ОБ ОТКЛЮЧЕНИЯХ</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="isp-fon-container">
+                <div class="isp-new-section">
+                    <h2>Интернет в Воронеже и области</h3>
+                        <div class="grid-maps ">
+                            <div class="grid-maps__item  ">
+                                <a href="maps.html">
+                                    <div class="button">
+                                        <img class="button__picture" src="images/mapvrn.jpg" alt="">
+                                        <div class="button__name">Воронеж </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid-maps__item  ">
                                 <a href="#">
-                                    <div class="isp-min-map">
-                                        <div class="isp-map__fone">
+                                    <div class="button">
+                                        <img class="button__picture" src="images/mapmsl.jpg" alt="">
+                                        <div class="button__name">
                                             Масловка
                                         </div>
                                     </div>
                                 </a>
                             </div>
-                            <div class="mdl-cell mdl-cell--2-col mdl-cell--3-col-tablet mdl-cell--2-col-phone  ">
+                            <div class="grid-maps__item  ">
                                 <a href="#">
-                                    <div class="isp-min-map">
-                                        <div class="isp-map__fone">
+                                    <div class="button">
+                                        <img class="button__picture" src="images/mapsmv.jpg" alt="">
+                                        <div class="button__name">
                                             Сомово
                                         </div>
                                     </div>
                                 </a>
                             </div>
-                            <div class="mdl-cell mdl-cell--2-col mdl-cell--3-col-tablet mdl-cell--2-col-phone  ">
+                            <div class="grid-maps__item  ">
                                 <a href="#">
-                                    <div class="isp-min-map">
-                                        <div class="isp-map__fone">
+                                    <div class="button">
+                                        <img class="button__picture" src="images/mapbrv.jpg" alt="">
+                                        <div class="button__name">
                                             Боровое
                                         </div>
                                     </div>
                                 </a>
                             </div>
-                            <div class="mdl-cell mdl-cell--2-col mdl-cell--3-col-tablet mdl-cell--2-col-phone  ">
+                            <div class="grid-maps__item  ">
                                 <a href="#">
-                                    <div class="isp-min-map">
-                                        <div class="isp-map__fone">
+                                    <div class="button">
+                                        <img class="button__picture" src="images/maporl.jpg" alt="">
+                                        <div class="button__name">
                                             Орлово
                                         </div>
                                     </div>
                                 </a>
                             </div>
-                            <div class="mdl-cell mdl-cell--2-col mdl-cell--3-col-tablet mdl-cell--2-col-phone  ">
+                            <div class="grid-maps__item  ">
                                 <a href="#">
-                                    <div class="isp-min-map">
-                                        <div class="isp-map__fone">
+                                    <div class="button">
+                                        <img class="button__picture" src="images/mappdg.jpg" alt="">
+                                        <div class="button__name">
                                             Подгорное
                                         </div>
                                     </div>
                                 </a>
                             </div>
+
                         </div>
-                    </div>
                 </div>
-                <div class="isp-fon-container">
+            </div>
 
-                </div>
+            <div class="isp-fon-container">
+                <div class="isp-new-section">
 
-                <div class="isp-fon-container">
-                    <div class="isp-new-section">
-                        <h3>АКЦИИ</h3>
-                        <div class=" mdl-grid mdl-grid--no-spacing ">
-                            <div class="mdl-cell mdl-cell--5-col mdl-cell--8-col-tablet mdl-cell--8-col-phone  ">
 
-                                <div class="int-new-1 ">
-                                    <div class="int-new-date">10 ноября</div>
-                                    <div class="int-new-text">
-                                        Интернет для частного дома по привлекательной цене</div>
-                                </div>
-                            </div>
-                            <div class="mdl-cell mdl-cell--7-col mdl-cell--8-col-tablet mdl-cell--8-col-phone  ">
-                                <div class="mdl-grid mdl-grid--no-spacing">
-                                    <div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-cell--4-col-phone ">
 
-                                        <div class="int-new-2 ">
-                                            <div class="int-new-date">8 ноября</div>
-                                            <div class="int-new-text2">
-                                                Новым абонетам скидка 30% на телефонию в офис</div>
+                    <h2>АКЦИИ</h3>
+                        <div class="action-wrap">
+                            <div class=" grid-actions ">
+                                <div class="grid-actions__item-first">
+                                    <a href="">
+                                        <div class="actions">
+                                            <img class="actions__pic" src="images/vrnnew.jpg" alt="">
+                                            <div class="actions__date">10 ноября</div>
+
+                                            <div class="actions__title">Интернет для частного дома по привлекательной цене<br><br></div>
                                         </div>
-                                    </div>
-                                    <!--<div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone ">
-                                    <div class="int-new-2 ">
-                                        <div class="int-new-date">5 ноября</div>
-                                        <div class="int-new-text2">Начато строительство новой сети</div>
-                                    </div>
-
-                                </div>-->
-
+                                    </a>
                                 </div>
-                                <div class="mdl-grid mdl-grid--no-spacing">
-                                    <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone ">
+                                <div class="grid-actions__item-second  ">
+                                    <div class="actions-col">
+                                        <a href="">
 
-                                        <div class="int-new-2 ">
-                                            <div class="int-new-date">1 ноября</div>
-                                            <div class="int-new-text2">
-                                                При подключении интернета роутер в подарок
+                                            <div class="actions">
+                                                <img class="actions__pic" src="images/vrnnew.jpg" alt="">
+                                                <div class="actions__date">10 ноября</div>
+
+                                                <div class="actions__title actions__title--centr">Интернет для частного дома по привлекательной цене</div>
                                             </div>
+                                        </a>
+                                        <div class="actions-button">
+                                            <a href="">
+                                                <p>Смотреть все Акции&nbsp;&nbsp;
+                                                    <span> <i class="material-icons">input</i></span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="actions-button--sm">
+                                            <a href="">
+                                                <p>Смотреть все Акции&nbsp;&nbsp;
+                                                    <span> <i class="material-icons">input</i></span>
+                                                </p>
+                                            </a>
                                         </div>
                                     </div>
-                                    <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone ">
-                                        <div class="int-new-2 ">
-                                            <div class="int-new-date">5 ноября</div>
-                                            <div class="int-new-text2">Бесплатное гарантийное обслуживание</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                </div>
+            </div>
+
+            <div class="isp-fon-container">
+                <div class="isp-new-section">
+                    <h2>АКЦИИ</h3>
+                        <div class="action-wrap">
+
+                            <div class=" grid-actions ">
+                                <div class="grid-actions__item-first">
+                                    <div class="actions-col">
+                                        <a href="">
+
+                                            <div class="actions">
+
+                                                <img class="actions__pic" src="images/vrnnew.jpg" alt="">
+                                                <div class="actions__date">10 ноября</div>
+
+                                                <div class="actions__title">Интернет для частного дома по привлекательной цене</div>
+                                            </div>
+                                        </a>
+
+                                        <div class="actions-button">
+                                            <a href="">
+                                                <p>Смотреть все Акции&nbsp;&nbsp;
+                                                    <span> <i class="material-icons">input</i></span>
+                                                </p>
+                                            </a>
                                         </div>
-
                                     </div>
+                                </div>
+                                <div class="grid-actions__item-second  ">
+                                    <div>
+                                        <a href="">
 
+                                            <div class="actions">
+                                                <img class="actions__pic" src="images/vrnnew.jpg" alt="">
+                                                <div class="actions__date">10 ноября</div>
+
+                                                <div class="actions__title">Интернет для частного дома по привлекательной цене</div>
+                                            </div>
+                                        </a>
+
+                                        <a href="">
+
+                                            <div class="actions ">
+                                                <img class="actions__pic" src="images/vrnnew.jpg" alt="">
+                                                <div class="actions__date">10 ноября</div>
+
+                                                <div class="actions__title">Интернет для частного дома по привлекательной цене</div>
+                                            </div>
+                                        </a>
+                                        <div class="actions-button--sm">
+                                            <a href="">
+                                                <p>Смотреть все Акции&nbsp;&nbsp;
+                                                    <span> <i class="material-icons">input</i></span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
-
-
                         </div>
-                    </div>
                 </div>
-                <div class="isp-be-together-section ">
-                    <div class="isp-baner">
-                        <img class="isp-baner__image" src="images/wear.png">
-                        <img class="isp-baner__image" src="images/wear.png">
-                        <img class="isp-baner__image" src="images/wear.png">
-                        <img class="isp-baner__image" src="images/wear.png">
-                        <img class="isp-baner__image" src="images/isp_baner4.jpg">
-                        <img class="isp-baner__image" src="images/isp_baner2.jpg">
-                        <img class="isp-baner__image" src="images/isp_baner3.jpg">
-                    </div>
 
-                    <!-- Navigation
-          <div class="weit-font  android-slogan">ИНТЕРКОН Акции!!!</div>
-			 -->
-                </div>
-                <div class="isp-fon-container">
-                    <div class="isp-new-section">
-                        <h3>Новости</h3>
-                        <div class=" mdl-grid  ">
-                            <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone  ">
-                                <div class="isp-news">
-                                    <p class="isp-news__date">06.03.2017 </p>
+            </div>
+
+            <div class="isp-fon-container">
+                <div class="isp-new-section">
+                    <h2>Новости</h3>
+                        <div class=" grid-news  ">
+                            <div class="grid-news__item  ">
+                                <h6>06.03.2017 </h6>
+                                </br>
+                                <p>
                                     Уважаемые клиенты!<br><br> Поздравляем Вас с наступающим праздником – Международным женским днем!<br><br> График работы офиса и кассы:<br> 07.03.2017 – с 09:00 до 18:00<br> 08.03.2017 – выходной<br><br> Напоминаем,
                                     что оплатить услуги компании «Интеркон» Вы можете в платежных терминалах самообслуживания г. Воронежа и банковской картой из личного кабинета!
-                                </div>
+                                </p>
                             </div>
-                            <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone  ">
-                                <div class="isp-news">
-                                    <p class="isp-news__date">01.04.2017 </p>
+                            <div class="grid-news__item    grid-news__item--border">
+                                <h6>06.03.2017 </h6>
+                                </br>
+                                <p>
                                     Уважаемые абоненты!<br><br> 04.04.2017 с 10:00 до 12:00 в связи с техническими работами по обновлению биллинговой системы возможны сложности с доступом к нашим услугам. Также в указанный период будут недоступны сервисы
                                     оплаты.
-                                    <br><br>Приносим извинения за временные неудобства и надеемся на понимание!
-                                </div>
+                                    <br><br>Приносим извинения за временные неудобства и надеемся на понимание!</p>
                             </div>
-                            <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone  ">
-                                <div class="isp-news">
-                                    <p class="isp-news__date">06.03.2017 </p>
+                            <div class="grid-news__item ">
+                                <h6>06.03.2017 </h6>
+                                </br>
+                                <p>
                                     С Днем защитника Отечества!<br><br> Уважаемые клиенты!<br><br> Поздравляем Вас с наступающим праздником – Днем защитника Отечества!<br><br> График работы офиса и кассы:<br> 22.02.2017 с 9:00 до 17:00<br> 23-24.02.2017
                                     выходной
                                     <br> 25.02.2017 с 10:00 до 16:00<br> 26.02.2017 выходной<br><br> Напоминаем, что оплатить услуги компании «Интеркон» Вы можете независимо от графика работы нашей кассы в платежных терминалах самообслуживания г. Воронежа
-                                    и банковской картой из личного кабинета!
-                                </div>
+                                    и банковской картой из личного кабинета!</p>
                             </div>
                         </div>
-                    </div>
                 </div>
-
-
-
-                <div class="int-telefon-section ">
-
-                    Звоните круглосуточно +7(473) 239-10-10
-
-                </div>
-
-
-
-                <footer class="android-footer mdl-mega-footer">
-                    <div class="mdl-mega-footer--top-section">
-                        <div class="mdl-mega-footer--left-section">
-                            <button class="mdl-mega-footer--social-btn"></button> &nbsp;
-                            <button class="mdl-mega-footer--social-btn"></button> &nbsp;
-                            <button class="mdl-mega-footer--social-btn"></button>
-                        </div>
-                        <div class="mdl-mega-footer--right-section">
-                            <a class="mdl-typography--font-light" href="#top">
-                В начало
-                <i class="material-icons">expand_less</i>
-              </a>
-                        </div>
-                    </div>
-
-                    <div class="mdl-mega-footer--middle-section">
-                        <p class="mdl-typography--font-light">Интеркон Воронеж. Ленина 73</p>
-                        <p class="mdl-typography--font-light">Интернет Провайдер</p>
-                    </div>
-
-                </footer>
             </div>
+
+
+
+
+            <div class="isp-telefon-section ">
+
+                <h3>Звоните круглосуточно <span>+7(473)&nbsp;239-10-10</span></h3>
+
+            </div>
+
+
+
+            <footer class=" footer">
+                <div class="wrapper-footer font-light ">
+                    <div class="grid-footer">
+                        <div class="grid-footer__item">
+
+                            <ul class="social-menu">
+                                <li class="social-item"><a href="https://vk.com/interconvrn"><i class="fa fa-2x fa-vk"></i></a></li>
+                                <li class="social-item"><a href=""><i class="fa fa-2x fa-facebook"></i></a></li>
+                                <li class="social-item"><a href=""><i class="fa fa-2x fa-youtube"></i></a></li>
+                            </ul>
+                            <p class="font-light">Интеркон Воронеж. Ленина 73</p>
+                            <p class="font-light">Интернет Провайдер</p>
+                        </div>
+                        <div class="grid-footer__item">
+                            <a href="">
+                                <p class="font-light">О Компании</p>
+                            </a>
+                            <a href="contacts.html">
+                                <p class="font-light">Контакты</p>
+                            </a>
+                            <a href="">
+                                <p class="font-light">Документы</p>
+                            </a>
+                            <a href="">
+                                <p class="font-light">Обращение к руководству</p>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </footer>
         </div>
-        <a href=# target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Консультант</a>
-        <script src="https://code.getmdl.io/1.2.1/material.min.js">
-            < /scrip<t>  <
-            script src = "js/intercon.js" >
-        </script>
+    </div>
+    <a href=# target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Консультант</a>
+    <script src="https://code.getmdl.io/1.2.1/material.min.js">
+        < /script>  <
+        //     script src = "js/intercon.js" >
+        //
+    </script>
 </body>
+
+</html>
 
 </html>

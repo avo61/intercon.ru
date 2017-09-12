@@ -1,0 +1,760 @@
+<!doctype html>
+
+
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content=".">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Интеркон</title>
+
+    <!-- Page styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,100,500,300italic,500italic,700italic,900,300">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=ru">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.min.css">
+    <!-- <link rel="stylesheet" href="css/styles.css"> -->
+    <link rel="stylesheet" href="css/intercon.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scroll.js"></script>
+    <style>
+        #view-source {
+            position: fixed;
+            display: block;
+            right: 0;
+            bottom: 0;
+            margin-right: 40px;
+            margin-bottom: 40px;
+            z-index: 900;
+        }
+    </style>
+</head>
+
+<body>
+    <!--<div class="mdl-layout  mdl-js-layout ">-->
+    <div class="mdl-layout  mdl-js-layout  mdl-layout--fixed-header">
+
+        <!--<header class=" mdl-layout__header  mdl-layout__header--waterfall  ">-->
+        <header class=" mdl-layout__header  mdl-layout__header--waterfall  mdl-layout__header--isp ">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title mdl-layout-title--nomobile-isp ">
+                        <a href="index.html">
+                                
+                    <img class="isp-logo-image" src="images/logo.png">
+                        </a>
+		        </span>
+                <!-- Add spacer, to align navigation to the right in desktop -->
+                <div class=" mdl-layout-spacer"></div>
+
+                <!-- Navigation -->
+                <nav class="mdl-navigation  mdl-navigation--isp-row">
+                    <a class="mdl-navigation__link  mdl-typography--text-uppercase" href="house.html/">Дом</a>
+                    <a class="mdl-navigation__link  mdl-typography--text-uppercase" href="house.html">Квартира</a>
+                    <a class="mdl-navigation__link  mdl-typography--text-uppercase" href="http://intercon.ru/corporate/16/tariff/">Офис</a>
+                    <a class="mdl-navigation__link  mdl-typography--text-uppercase" href="http://intercon.ru/support/faq/">Сервис</a>
+                </nav>
+                <div class=" mdl-layout-spacer"></div>
+                <nav class="mdl-navigation  mdl-navigation--isp-row">
+                    <a class="mdl-navigation__link mdl-navigation__link--isp-kabinet mdl-navigation__link--isp-row" href="https://myintercon.ru/login"><i class="material-icons">lock</i>Кабинет</a>
+
+                    <a class="mdl-navigation__link  mdl-navigation__link--icon  mdl-navigation__link--isp-row mdl-navigation__link--isp-telefon" href="">
+                        <div class="isp-telefon">круглосуточно</div> <i class="material-icons">phone</i><span>+7(473)</span> 239-10-10</a>
+                </nav>
+
+                <!--<button class="mdl-button  mdl-button--isp  mdl-js-button  mdl-button--icon  mdl-js-ripple-effect" id="more-button">
+                    <i class="material-icons">more_vert</i>
+                </button>
+                <ul class="mdl-menu  mdl-js-menu  mdl-menu--bottom-right  mdl-js-ripple-effect" for="more-button">
+                    <li class="mdl-menu__item">Интернет</li>
+                    <li class="mdl-menu__item">IP TV</li>
+                    <li class="mdl-menu__item">HotSpot</li>
+                    <li class="mdl-menu__item">WiFi</li>
+                    <li disabled class="mdl-menu__item">Телефония</li>
+                    <li disabled class="mdl-menu__item">Сервис</li>
+                    <li disabled class="mdl-menu__item">Доп Услуги</li>
+                    <li class="mdl-menu__item">О Компании</li>
+                </ul>-->
+
+                <span class="mdl-layout-title  mdl-layout-title--mobile-isp ">
+                    <img class="isp-logo-image" src="images/logo.png">
+                </span>
+
+            </div>
+            <!-- Bottom row, not visible on scroll -->
+            <div class="mdl-layout__header-row mdl-layout__header-row2 ">
+                <div class="mdl-layout-spacer"></div>
+
+                <nav class="mdl-navigation mdl-navigation--isp-row2">
+                    <a class="mdl-navigation__link" href="">
+                        <i class="material-icons">language</i>
+                        <div>Интернет</div>
+                    </a>
+                    <!--<a class="mdl-navigation__link" href="">
+                        <i class="material-icons">computer</i>
+                        <div>Интернет</div>
+                    </a>-->
+                    <a class="mdl-navigation__link" href="">
+                        <i class="material-icons">tv</i>
+                        <div>TV</div>
+                    </a>
+                    <a class="mdl-navigation__link" href="">
+                        <i class="material-icons">devices</i>
+                        <div>Пакеты</div>
+                    </a>
+                    <a class="mdl-navigation__link" href="">
+                        <i class="material-icons">dialer_sip</i>
+                        <div>Телефония</div>
+                    </a>
+                    <a class="mdl-navigation__link" href="">
+                        <i class="material-icons">attach_money</i>
+                        <div>Тарифы</div>
+                    </a>
+                    <a class="mdl-navigation__link" href="">
+                        <i class="material-icons">child_care</i>
+                        <div>Акции</div>
+                    </a>
+                    <a class="mdl-navigation__link" href="">
+                        <i class="material-icons">rss_feed</i>
+                        <div>Новости</div>
+                    </a>
+                    <a class="mdl-navigation__link" href="">
+                        <i class="material-icons">build</i>
+                        <div>Поддержка</div>
+                    </a>
+
+
+
+                </nav>
+                <div class="mdl-layout-spacer"></div>
+                <nav class="mdl-navigation mdl-navigation--isp-row2">
+
+                    <a class="mdl-navigation__link" href="">
+                        <i class="material-icons">credit_card</i>
+                        <div>Оплатить</div>
+                    </a>
+                    <a class="mdl-navigation__link" href="">
+                        <i class="material-icons">person_add</i>
+                        <div>Подключиться</div>
+                    </a>
+
+
+
+                    <!--<a class="mdl-navigation__link_" href="">|</a>-->
+                    <!--<a class="mdl-navigation__link" href="">Оплатить</a>
+                    <a class="mdl-navigation__link" href="">Подключиться</a>
+                    <a href=# target="_blank" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Подключиться</a>-->
+                </nav>
+            </div>
+            <!--
+            <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+                <a href="#fixed-tab-1" class="mdl-layout__tab is-active">Tab 1</a>
+                <a href="#fixed-tab-2" class="mdl-layout__tab">Tab 2</a>
+                <a href="#fixed-tab-3" class="mdl-layout__tab">Tab 3</a>
+            </div>-->
+        </header>
+
+        <div class="mdl-layout__drawer mdl-layout__header--isp">
+            <span class="isp-button-clear">
+            <button class="mdl-button  mdl-js-button  mdl-button--icon mdl-js-ripple-effect">
+            <i class="material-icons">clear</i>
+             </button>		
+            </span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link  mdl-navigation__link--isp-drawer" href="">Личный Кабинет</a>
+                <a class="mdl-navigation__link  mdl-navigation__link--isp-drawer" href="">Интернет Дом</a>
+                <a class="mdl-navigation__link  mdl-navigation__link--isp-drawer" href="">Интернет Квартира</a>
+                <a class="mdl-navigation__link  mdl-navigation__link--isp-drawer" href="">Интернет Офис</a>
+                <a class="mdl-navigation__link  mdl-navigation__link--isp-drawer" href="">Цифровое ТВ</a>
+                <a class="mdl-navigation__link  mdl-navigation__link--isp-drawer" href="">Телефония</a>
+                <a class="mdl-navigation__link  mdl-navigation__link--isp-drawer" href="">Сервис</a>
+                <a class="mdl-navigation__link  mdl-navigation__link--isp-drawer" href="">Компания</a>
+                <a class="mdl-navigation__link  mdl-navigation__link--isp-drawer" href="">Форум</a>
+                <a class="mdl-navigation__link  mdl-navigation__link--isp-drawer" href="">Обращение&nbsp;к&nbsp;Руководству</a>
+            </nav>
+        </div>
+
+        <div class="mdl-layout__content">
+
+
+
+            <div class="isp-fon-container">
+                <div class="isp-new-section">
+                    <div class="int-section-title  logo-font ">
+                        <h1>ИНТЕРНЕТ В ЧАСТНЫЙ ДОМ</h1>
+                    </div>
+
+                    <!--<div class="wrapper">-->
+                    <div class="grid-info">
+                        <div class="grid-info__text">
+
+                            <!--<h2></h2>-->
+                            <p>
+                                Интеркон сегодня – это скоростной безлимитный доступ в Интернет, цифровая телефония, надежный хостинг, множество локальных ресурсов и самые выгодные условия использования всего этого для абонентов.
+                                <br>Читать далее>>
+                                <br><br>
+                            </p>
+                            <p>
+                                Интеркон сегодня – это скоростной безлимитный доступ в Интернет, цифровая телефония, надежный хостинг, множество локальных ресурсов и самые выгодные условия использования всего этого для абонентов.
+                                <br>Читать далее>>
+                                <br><br>
+                            </p>
+                            <p>
+                                Интеркон сегодня – это скоростной безлимитный доступ в Интернет, цифровая телефония, надежный хостинг, множество локальных ресурсов и самые выгодные условия использования всего этого для абонентов.
+                                <br>Читать далее>>
+                                <br><br>
+                            </p>
+
+                        </div>
+                        <div class="grid-info__video">
+                            <div class="video-info">
+                                <iframe src="https://www.youtube.com/embed/30fHYPJARb8" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <!--</div>-->
+
+                </div>
+            </div>
+
+            <div class="isp-fon-container">
+                <div class="isp-new-section">
+                    <h2>Тарифы Интернет</h2>
+                    <div class="grid-wrapper">
+                        <div class="grid-price">
+                            <div class="grid-price__item3">
+                                <a href="">
+                                    <div class="price-card">
+                                        <div class="price-card__list">
+                                            <h5>Коттедж</h5>
+                                            <div class="price-card__list--align"> </div>
+                                            <p><mark>490</mark> руб/мес</p>
+                                            <p>40 Мбит/с</p>
+                                        </div>
+                                        <div class="price-card__list--hover"></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid-price__item3">
+                                <a href="">
+                                    <div class="price-card">
+                                        <div class="price-card__list">
+                                            <h5>Коттедж-Скоростной</h5>
+                                            <div class="price-card__list--align"> </div>
+                                            <p><mark>600</mark> руб/мес</p>
+                                            <p>60 Мбит/с</p>
+                                        </div>
+                                        <div class="price-card__list--hover"></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid-price__item3">
+                                <a href="">
+                                    <div class="price-card">
+                                        <div class="price-card__list">
+                                            <h5>Коттедж-Реактивный</h5>
+                                            <div class="price-card__list--align"> </div>
+                                            <p><mark>900</mark> руб/мес</p>
+                                            <p>100 Мбит/с</p>
+                                        </div>
+                                        <div class="price-card__list--hover"></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="isp-fon-container">
+                <div class="isp-new-section">
+                    <h2>Тарифы Смотрешка</h2>
+                    <div class="grid-wrapper">
+
+                        <div class="grid-price">
+                            <div class="grid-price__item4">
+                                <a href="">
+                                    <div class="price-card price-card--background">
+                                        <div class="price-card__list">
+                                            <h5>50 каналов</h5>
+                                            <p><mark>50</mark> руб/мес</p>
+                                            <p>50 каналов</p>
+                                        </div>
+                                        <div class="price-card__list--hover"></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid-price__item4">
+                                <a href="">
+                                    <div class="price-card  price-card--background">
+                                        <div class="price-card__list">
+                                            <h5>109 каналов</h5>
+                                            <p><mark>100</mark> руб/мес</p>
+                                            <p>109 каналовс</p>
+                                        </div>
+                                        <div class="price-card__list--hover"></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid-price__item4">
+                                <a href="">
+                                    <div class="price-card  price-card--background">
+                                        <div class="price-card__list">
+                                            <h5>121 канал</h5>
+                                            <p><mark>175</mark> руб/мес</p>
+                                            <p>121 канал</p>
+                                        </div>
+                                        <div class="price-card__list--hover"></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid-price__item4">
+                                <a href="">
+                                    <div class="price-card  price-card--background ">
+                                        <div class="price-card__list">
+                                            <h5>138 каналов</h5>
+                                            <p><mark>250</mark> руб/мес</p>
+                                            <p>138 каналов</p>
+                                        </div>
+                                        <div class="price-card__list--hover"></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="isp-fon-container">
+                <div class="isp-new-section">
+                    <h2>Тарифы IP TV</h2>
+                    <div class="grid-wrapper">
+                        <div class="grid-price">
+                            <div class="grid-price__item3">
+                                <a href="">
+                                    <div class="price-card">
+                                        <div class="price-card__list">
+                                            <h5>Мультиплексы</h5>
+                                            <div class="price-card__list--align"> </div>
+                                            <p><mark>0</mark> руб/мес</p>
+                                            <p>21 канал</p>
+                                        </div>
+                                        <div class="price-card__list--hover"></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid-price__item3">
+                                <a href="">
+                                    <div class="price-card">
+                                        <div class="price-card__list">
+                                            <h5>Цифровое Свое Родное</h5>
+                                            <div class="price-card__list--align"> </div>
+                                            <p><mark>100</mark> руб/мес</p>
+                                            <p>53 канала</p>
+                                        </div>
+                                        <div class="price-card__list--hover"></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid-price__item3">
+                                <a href="">
+                                    <div class="price-card">
+                                        <div class="price-card__list">
+                                            <h5>Главный</h5>
+                                            <div class="price-card__list--align"> </div>
+                                            <p><mark>300</mark> руб/мес</p>
+                                            <p>135 каналов</p>
+                                        </div>
+                                        <div class="price-card__list--hover"></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="isp-fon-container">
+                <div class="isp-new-section">
+                    <h2>Пакеты</h2>
+                    <div class="grid-wrapper">
+                        <div class="grid-price">
+                            <div class="grid-price__item3">
+                                <a href="">
+                                    <div class="price-card">
+                                        <div class="price-card__list">
+                                            <h5>Пакет 1</h5>
+                                            <div class="price-card__list--align"> </div>
+                                            <p><mark>600</mark> руб/мес</p>
+                                            <p>100 Мбит/с</p>
+                                            <p>109 каналов</p>
+                                        </div>
+                                        <div class="price-card__list--hover"></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="isp-fon-container">
+                <div class="isp-new-section">
+
+                    <h2>АКЦИИ</h2>
+                    <div class="action-wrap">
+                        <div class=" grid-actions ">
+                            <div class="grid-actions__item-first">
+                                <a href="">
+                                    <div class="actions">
+                                        <img class="actions__pic" src="images/kot.jpg" alt="">
+                                        <div class="actions__date">10 ноября</div>
+
+                                        <div class="actions__title">Подключайте Интернет в частный дом за 1900 руб.!<br><br></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid-actions__item-second  ">
+                                <div class="actions-col">
+                                    <a href="">
+
+                                        <div class="actions">
+                                            <img class="actions__pic" src="images/kot1.jpg" alt="">
+                                            <div class="actions__date">10 ноября</div>
+
+                                            <div class="actions__title actions__title--centr"></div>
+                                            <!-- <div class="actions__title actions__title--centr">Интернет для частного дома по привлекательной цене</div> -->
+                                        </div>
+                                    </a>
+                                    <div class="actions-button">
+                                        <a href="">
+                                            <p>Смотреть все Акции&nbsp;&nbsp;
+                                                <span> <i class="material-icons">input</i></span>
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="actions-button--sm">
+                                        <a href="">
+                                            <p>Смотреть все Акции&nbsp;&nbsp;
+                                                <span> <i class="material-icons">input</i></span>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="isp-fon-container">
+                <div class="isp-new-section">
+                    <h2>Как подключиться</h3>
+                        <div class="connect">
+
+                            <div class="grid-wrapper">
+                                <div class="grid-price">
+                                    <div class="grid-price__item3">
+                                        <div class="circle-size">
+
+                                            <a href="">
+                                                <div class="price-card  price-card--circle">
+                                                    <div class="price-card__list price-card__list--circle ">
+                                                        <h5>1</h5>
+                                                        <p>Оставить</p>
+                                                        <p>заявку</p>
+                                                    </div>
+                                                    <div class="price-card__list--hover"></div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="grid-price__item3">
+                                        <div class="circle-size">
+                                            <a href="">
+                                                <div class="price-card price-card--circle">
+                                                    <div class="price-card__list price-card__list--circle">
+                                                        <h5>2</h5>
+                                                        <p>Заключить</p>
+                                                        <p>договор</p>
+                                                    </div>
+                                                    <div class="price-card__list--hover"></div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="grid-price__item3">
+                                        <div class="circle-size">
+                                            <a href="">
+                                                <div class="price-card price-card--circle ">
+                                                    <div class="price-card__list price-card__list--circle">
+                                                        <h5>3</h5>
+                                                        <p>Ожидайте</p>
+                                                        <p>подключения</p>
+                                                    </div>
+                                                    <div class="price-card__list--hover"></div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="isp-fon-container">
+                    <div class="isp-new-section">
+                        <h2>Дополнительный сервис</h3>
+                            <div class="grid-wrapper">
+
+                                <div class="grid-price">
+                                    <div class="grid-price__item4">
+                                        <a href="">
+                                            <div class="price-card price-card--background">
+                                                <div class="price-card__list">
+                                                    <p>SMS</p>
+                                                    <p>оповещения</p>
+                                                </div>
+                                                <div class="price-card__list--hover"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="grid-price__item4">
+                                        <a href="">
+                                            <div class="price-card price-card--background">
+                                                <div class="price-card__list">
+                                                    <p>Обещанный</p>
+                                                    <p>платеж</p>
+                                                </div>
+                                                <div class="price-card__list--hover"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="grid-price__item4">
+                                        <a href="">
+                                            <div class="price-card price-card--background">
+                                                <div class="price-card__list">
+                                                    <p>Управление</p>
+                                                    <p> тарифами</p>
+                                                </div>
+                                                <div class="price-card__list--hover"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="grid-price__item4">
+                                        <a href="">
+                                            <div class="price-card price-card--background">
+                                                <div class="price-card__list">
+                                                    <p>Временная</p>
+                                                    <p>блокировка</p>
+                                                </div>
+                                                <div class="price-card__list--hover"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="isp-fon-container">
+                    <div class="isp-new-section">
+                        <h2>Дополнительные услуги</h3>
+                            <div class="grid-wrapper">
+                                <div class="grid-price">
+                                    <div class="grid-price__item6">
+                                        <a href="">
+                                            <div class="price-card">
+                                                <div class="price-card__list">
+                                                    <p>Разводка</p>
+                                                    <p>кабеля</p>
+                                                    <p>по дому</p>
+                                                </div>
+                                                <div class="price-card__list--hover"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="grid-price__item6">
+                                        <a href="">
+                                            <div class="price-card">
+                                                <div class="price-card__list">
+                                                    <p>Установка</p>
+                                                    <p>WiFi</p>
+                                                    <p>роутера</p>
+                                                </div>
+                                                <div class="price-card__list--hover"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="grid-price__item6">
+                                        <a href="">
+                                            <div class="price-card">
+                                                <div class="price-card__list">
+                                                    <p>Организация</p>
+                                                    <p>WiFi зоны</p>
+                                                    <p>с роумингом</p>
+                                                </div>
+                                                <div class="price-card__list--hover"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="grid-price__item6">
+                                        <a href="">
+                                            <div class="price-card">
+                                                <div class="price-card__list">
+                                                    <p>Подключение</p>
+                                                    <p>цифрового</p>
+                                                    <p>телевидения</p>
+                                                </div>
+                                                <div class="price-card__list--hover"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="grid-price__item6">
+                                        <a href="">
+                                            <div class="price-card">
+                                                <div class="price-card__list">
+                                                    <p>Подключение</p>
+                                                    <p>ваших</p>
+                                                    <p>устройств</p>
+                                                    <p>к сети</p>
+                                                </div>
+                                                <div class="price-card__list--hover"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="grid-price__item6">
+                                        <a href="">
+                                            <div class="price-card">
+                                                <div class="price-card__list">
+                                                    <p>Установка</p>
+                                                    <p>IP телефона</p>
+                                                </div>
+                                                <div class="price-card__list--hover"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="isp-fon-container">
+                        <div class="isp-new-section">
+                            <h2>Способы оплаты</h3>
+                                <div class="grid-price">
+                                    <div class="grid-price__item6">
+                                        <a href="">
+                                            <div class="price-card">
+                                                <div class="price-card__list">
+                                                    <p>Касса</p>
+                                                </div>
+                                                <div class="price-card__list--hover"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="grid-price__item6">
+                                        <a href="">
+                                            <div class="price-card">
+                                                <div class="price-card__list">
+                                                    <p>Электронные</p>
+                                                    <p>деньги</p>
+                                                </div>
+                                                <div class="price-card__list--hover"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="grid-price__item6">
+                                        <a href="">
+                                            <div class="price-card">
+                                                <div class="price-card__list">
+                                                    <p>Банковские</p>
+                                                    <p>карточки</p>
+                                                </div>
+                                                <div class="price-card__list--hover"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="grid-price__item6">
+                                        <a href="">
+                                            <div class="price-card">
+                                                <div class="price-card__list">
+                                                    <p>Банкомат</p>
+                                                    <p>СБ</p>
+                                                </div>
+                                                <div class="price-card__list--hover"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="grid-price__item6">
+                                        <a href="">
+                                            <div class="price-card">
+                                                <div class="price-card__list">
+                                                    <p>Платежные</p>
+                                                    <p>системы</p>
+                                                </div>
+                                                <div class="price-card__list--hover"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                        </div>
+                    </div>
+                    <div class="isp-fon-container">
+                        <div class="isp-new-section">
+                            <div class="payment-system"><img src="images/pay.png" alt=""></div>
+                        </div>
+                    </div>
+
+                    <div class="isp-telefon-section ">
+
+                        <h3>Звоните круглосуточно <span>+7(473)&nbsp;239-10-10</span></h3>
+
+                    </div>
+
+
+
+                    <footer class=" footer">
+                        <div class="wrapper-footer font-light ">
+                            <div class="grid-footer">
+                                <div class="grid-footer__item">
+
+                                    <ul class="social-menu">
+                                        <li class="social-item"><a href="https://vk.com/interconvrn"><i class="fa fa-2x fa-vk"></i></a></li>
+                                        <li class="social-item"><a href=""><i class="fa fa-2x fa-facebook"></i></a></li>
+                                        <li class="social-item"><a href=""><i class="fa fa-2x fa-youtube"></i></a></li>
+                                    </ul>
+                                    <p class="font-light">Интеркон Воронеж. Ленина 73</p>
+                                    <p class="font-light">Интернет Провайдер</p>
+                                </div>
+                                <div class="grid-footer__item">
+                                    <a href="">
+                                        <p class="font-light">О Компании</p>
+                                    </a>
+                                    <a href="contacts.html">
+                                        <p class="font-light">Контакты</p>
+                                    </a>
+                                    <a href="">
+                                        <p class="font-light">Документы</p>
+                                    </a>
+                                    <a href="">
+                                        <p class="font-light">Обращение к руководству</p>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </footer>
+                </div>
+
+            </div>
+            <a href=# target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Консультант</a>
+            <script src="https://code.getmdl.io/1.2.1/material.min.js">
+                < /script>  <
+                //     script src = "js/intercon.js" >
+                //
+            </script>
+</body>
+
+</html>
+
+</html>

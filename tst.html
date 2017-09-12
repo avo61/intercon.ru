@@ -1,0 +1,410 @@
+<!doctype html>
+
+
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content=".">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Интеркон</title>
+
+    <!-- Page styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,100,500,300italic,500italic,700italic,900,300">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.min.css">
+    <!-- <link rel="stylesheet" href="css/styles.css"> -->
+    <link rel="stylesheet" href="css/intercon.css">
+    <script src="js/scroll.js"></script>
+    <style>
+        #view-source {
+            position: fixed;
+            display: block;
+            right: 0;
+            bottom: 0;
+            margin-right: 40px;
+            margin-bottom: 40px;
+            z-index: 900;
+        }
+        
+        .card {
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            font-size: 16px;
+            font-weight: 400;
+            min-height: 100px;
+            overflow: hidden;
+            min-width: 200px;
+            z-index: 1;
+            position: relative;
+            background: rgb(255, 255, 255);
+            border-radius: 2px;
+            box-sizing: border-box;
+        }
+        
+        .card--price {
+            /*width: 200px;*/
+            /*background-color: rgba(255, 123, 0, 0);*/
+            color: rgba(0, 0, 0, 0.8);
+            border: 1px solid rgba(255, 123, 0, 0.2);
+        }
+        
+        .card--price a {
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.8);
+        }
+        
+        .card__title {
+            padding: 10px;
+            font-size: 24px;
+            color: rgba(255, 123, 0, 1);
+            text-align: center;
+            /*background-color: rgba(0, 0, 0, 0);*/
+        }
+        
+        .card__text {
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        .card__text p {
+            font-size: 20px;
+            margin: 5px, 0, 10px;
+        }
+        
+        .card__text mark {
+            background-color: rgba(255, 123, 0, 0);
+            font-size: 40px;
+        }
+        
+        .card__hover {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            visibility: hidden;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            font-size: 40px;
+            /*background-color: rgba(255, 123, 0, 1);*/
+        }
+        
+        .card__hover p {
+            font-size: 40px;
+            color: rgba(255, 123, 0, 0);
+        }
+        
+        .card:hover .card__hover {
+            visibility: visible;
+            background-color: rgba(247, 123, 0, 1);
+            transition-duration: 5.0s;
+        }
+        
+        .card:hover .card__hover p {
+            color: rgba(255, 255, 255, 1);
+            transition-duration: 2.0s;
+            transition-delay: 3s;
+        }
+        
+        .znak {
+		display: inline-block;
+            border-radius: 50%;
+            width: 23px;
+            padding: 5px;
+            border: 5px solid red;
+        }
+		.speed{
+		display: inline-block;
+		}
+    </style>
+</head>
+
+<body>
+    <!--<div class="mdl-layout  mdl-js-layout ">-->
+    <div class="mdl-layout  mdl-js-layout  mdl-layout--fixed-header">
+
+        <!--<header class=" mdl-layout__header  mdl-layout__header--waterfall  ">-->
+
+
+        <div class="mdl-layout__content">
+            <div class="isp-fon-container">
+                <div class="isp-new-section">
+                    <div class="int-section-title  logo-font ">
+                        <h1>Интернет провайдер в Воронеже</h1>
+                    </div>
+
+                    <div class=" mdl-grid">
+
+                        <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-cell--8-col-phone  ">
+                            <div class="card card--price ">
+                                <a href="">
+
+
+                                    <div class="card__title">
+                                        Коттедж
+
+                                    </div>
+                                    <div class="card__text">
+                                        <p> <mark>600</mark> руб/мес </p>
+                                        <p>Скорость доступа
+                                            <div class="znak">50</div>
+                                            <div class="speed">Мбит/с</div>
+                                        </p>
+
+                                    </div>
+                                    <div class="card__hover">
+
+                                        <p>Узнать больше </p>
+
+                                    </div>
+
+                                </a>
+                            </div>
+                        </div>
+
+
+
+                        <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-cell--8-col-phone  ">
+                            <div class="card card--price ">
+                                <a href="">
+
+
+                                    <div class="card__title">
+                                        Коттедж реактивный
+
+                                    </div>
+                                    <div class="card__text">
+                                        <p><mark>800</mark> руб/мес </p>
+                                        <p>Скорость доступа 10Мбит/с </p>
+
+                                    </div>
+                                    <div class="card__hover">
+
+                                        <p>Узнать больше </p>
+
+                                    </div>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-cell--8-col-phone  ">
+                            <div class="card card--price ">
+                                <a href="">
+
+
+                                    <div class="card__title">
+                                        Коттедж
+
+                                    </div>
+                                    <div class="card__text">
+                                        <p> <mark>600</mark> руб/мес </p>
+                                        <p>Скорость доступа 50Мбит/с </p>
+
+                                    </div>
+                                    <div class="card__hover">
+
+                                        <p>Узнать больше </p>
+
+                                    </div>
+
+                                </a>
+                            </div>
+                        </div>
+
+
+
+                        <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-cell--8-col-phone  ">
+                            <div class="card card--price ">
+                                <a href="">
+
+
+                                    <div class="card__title">
+                                        Коттедж реактивный
+
+                                    </div>
+                                    <div class="card__text">
+                                        <p><mark>800</mark> руб/мес </p>
+                                        <p>Скорость доступа 10Мбит/с </p>
+
+                                    </div>
+                                    <div class="card__hover">
+
+                                        <p>Узнать больше </p>
+
+                                    </div>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- --------------------------------1----------------------------- -->
+                    <div class=" mdl-grid">
+
+                        <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--8-col-phone mdl-card mdl-card--isp-service-card_ mdl-card--border ">
+
+                            <!--<div class="demo-card-wide mdl-card mdl-shadow--2dp">-->
+                            <a href="">
+
+
+                                <div class="mdl-card__media">
+                                    <img class="img-opacity" src='images/adultbanner.jpg' width="574" height="170" border="0" alt="">
+
+                                </div>
+                                <div class="mdl-card__media--mask mdl-card__media--mask--align">
+                                    <h2 class="mdl-card__media--mask--format">Интернет для Многоквартирных Домов</h2>
+                                </div>
+                                <!--</a>-->
+                                <div class="mdl-card__supporting-text">
+                                    <h5>Интернет 100 Мбит/c</h5>
+                                    <h5>Оптика до Дома</h5>
+                                    <h5>IP TV более 200 каналов</h5>
+                                    <h3>От 490 руб</h3>
+                                </div>
+                                <div class="mdl-card__supporting-text--mask mdl-card__supporting-text--mask--align">
+                                    <h2 class="mdl-card__supporting-text--mask--format">Интернет для Частных Домов</h2>
+                                </div>
+                            </a>
+                        </div>
+
+
+                        <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--8-col-phone mdl-card mdl-card--isp-service-card_ mdl-card--border ">
+
+                            <!--<div class="demo-card-wide mdl-card mdl-shadow--2dp">-->
+                            <a href="">
+
+
+
+                                <div class="mdl-card__media">
+                                    <img class="img-opacity" src='images/kvartira2.jpg' width="574" height="170" border="0" alt="">
+                                </div>
+                                <div class="mdl-card__media--mask mdl-card__media--mask--align">
+                                    <h2 class="mdl-card__media--mask--format">Интернет для Многоквартирных Домов</h2>
+                                </div>
+                                <!--</a>-->
+                                <div class=" mdl-card__supporting-text">
+                                    <h4>Интернет для квартир 300 Мбит/c</h4>
+                                    <h5>Социальный тариф</h5>
+                                    <h5>Интерактивное ТВ</h5>
+                                    <h3>От 250 руб</h3>
+                                </div>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="isp-fon-container">
+                    <div class="isp-new-section">
+                        <h3>Интернет в Воронеже и области</h3>
+                        <div class=" mdl-grid  ">
+                            <div class="mdl-cell mdl-cell--2-col mdl-cell--3-col-tablet mdl-cell--2-col-phone  ">
+                                <a href="#">
+                                    <div class="isp-min-map">
+                                        <div class="isp-map__fone">
+                                            Воронеж
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="mdl-cell mdl-cell--2-col mdl-cell--3-col-tablet mdl-cell--2-col-phone  ">
+                                <a href="#">
+                                    <div class="isp-min-map">
+                                        <div class="isp-map__fone">
+                                            Масловка
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="mdl-cell mdl-cell--2-col mdl-cell--3-col-tablet mdl-cell--2-col-phone  ">
+                                <a href="#">
+                                    <div class="isp-min-map">
+                                        <div class="isp-map__fone">
+                                            Сомово
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="mdl-cell mdl-cell--2-col mdl-cell--3-col-tablet mdl-cell--2-col-phone  ">
+                                <a href="#">
+                                    <div class="isp-min-map">
+                                        <div class="isp-map__fone">
+                                            Боровое
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="mdl-cell mdl-cell--2-col mdl-cell--3-col-tablet mdl-cell--2-col-phone  ">
+                                <a href="#">
+                                    <div class="isp-min-map">
+                                        <div class="isp-map__fone">
+                                            Орлово
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="mdl-cell mdl-cell--2-col mdl-cell--3-col-tablet mdl-cell--2-col-phone  ">
+                                <a href="#">
+                                    <div class="isp-min-map">
+                                        <div class="isp-map__fone">
+                                            Подгорное
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <footer class="android-footer mdl-mega-footer">
+                    <div class="mdl-mega-footer--top-section">
+                        <div class="mdl-mega-footer--left-section">
+                            <button class="mdl-mega-footer--social-btn"></button> &nbsp;
+                            <button class="mdl-mega-footer--social-btn"></button> &nbsp;
+                            <button class="mdl-mega-footer--social-btn"></button>
+                        </div>
+                        <div class="mdl-mega-footer--right-section">
+                            <a class="mdl-typography--font-light" href="#top">
+                В начало
+                <i class="material-icons">expand_less</i>
+              </a>
+                        </div>
+                    </div>
+
+                    <div class="mdl-mega-footer--middle-section">
+                        <p class="mdl-typography--font-light">Интеркон Воронеж. Ленина 73</p>
+                        <p class="mdl-typography--font-light">Интернет Провайдер</p>
+                    </div>
+
+                </footer>
+            </div>
+        </div>
+        <a href=# target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Консультант</a>
+        <script src="https://code.getmdl.io/1.2.1/material.min.js">
+            < /scrip<t>  <
+            script src = "js/intercon.js" >
+        </script>
+</body>
+
+</html>
